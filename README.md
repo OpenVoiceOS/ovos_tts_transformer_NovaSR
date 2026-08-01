@@ -12,8 +12,8 @@ operating on the generated waveform rather than on text.
 
 ## How it works
 
-- The generated `.wav` is loaded by the [NovaSR](https://github.com/ysharma3501/NovaSR)
-  `FastSR` upsampler.
+- The [NovaSR](https://github.com/ysharma3501/NovaSR) `FastSR` upsampler loads
+  the generated `.wav`.
 - `FastSR` reconstructs a 48 kHz waveform from the low-resolution input.
 - The upsampled audio is written alongside the original and handed back for
   playback.
@@ -21,7 +21,7 @@ operating on the generated waveform rather than on text.
   is returned untouched.
 
 The model weights are fetched from the Hugging Face Hub on first use and cached
-locally — no manual download step is required.
+locally. No manual download step is required.
 
 `NovaSR` runs on PyTorch and uses the GPU when one is available. On CPU-only
 systems, enabling half precision (`half=True`) yields a 3–4× speedup.
@@ -50,7 +50,7 @@ keyed by the plugin name:
 
 The plugin takes no configuration of its own; once enabled it applies to the
 output of whichever TTS plugin is active. Multiple TTS transformers can be
-chained — execution order follows each plugin's `priority` (NovaSR defaults to
+chained. Execution order follows each plugin's `priority` (NovaSR defaults to
 `50`).
 
 ## Requirements
@@ -61,11 +61,11 @@ chained — execution order follows each plugin's `priority` (NovaSR defaults to
 
 ## Related
 
-- [`ovos-tts-transformer-FlashSR`](https://github.com/OpenVoiceOS/ovos_tts_transformer_FlashSR) —
+- [`ovos-tts-transformer-FlashSR`](https://github.com/OpenVoiceOS/ovos_tts_transformer_FlashSR):
   an ONNX-runtime super-resolution transformer covering the same role without a
   Torch dependency.
-- [`ovos-tts-transformer-sox-plugin`](https://github.com/OpenVoiceOS/ovos-tts-transformer-sox-plugin) —
-  general-purpose audio effects (pitch, reverb, EQ, …) for TTS output.
+- [`ovos-tts-transformer-sox-plugin`](https://github.com/OpenVoiceOS/ovos-tts-transformer-sox-plugin):
+  general-purpose audio effects (pitch, reverb, EQ, ...) for TTS output.
 
 ---
 
