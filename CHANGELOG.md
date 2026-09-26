@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.3a2](https://github.com/OpenVoiceOS/ovos_tts_transformer_NovaSR/tree/0.0.3a2) (2026-09-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_tts_transformer_NovaSR/compare/0.0.3a1...0.0.3a2)
+
+**Merged pull requests:**
+
+- chore\(ci\): drop the broken Dependabot config [\#11](https://github.com/OpenVoiceOS/ovos_tts_transformer_NovaSR/pull/11) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.0.3a1](https://github.com/OpenVoiceOS/ovos_tts_transformer_NovaSR/tree/0.0.3a1) (2026-09-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos_tts_transformer_NovaSR/compare/0a7c5968ca9ebd47d249c1f2dda447e76e59220a...0.0.3a1)
